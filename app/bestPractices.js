@@ -6,10 +6,10 @@ exports = typeof window === 'undefined' ? global : window;
  * populated incorrectly; your job is to fix them. Other methods are not
  * populated at all; your job is to fill them out.
  */
-
+'use-strict'
 exports.bestPracticesAnswers = {
   globals: function() {
-    myObject = {
+    var myObject = {
       name: 'Jory'
     };
 
@@ -17,10 +17,10 @@ exports.bestPracticesAnswers = {
   },
 
   parseInt: function(num) {
-    return parseInt(num);
+    return parseInt(num,10);
   },
 
   identity: function(val1, val2) {
-
+       return val1 === val2
   }
 };
