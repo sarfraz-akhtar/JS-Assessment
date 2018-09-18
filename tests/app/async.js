@@ -32,6 +32,7 @@ describe('async behavior', function() {
     var url = '/data/testdata.json';
 
     asyncAnswers.manipulateRemoteData(url).then(function(result) {
+      console.log(result)
       expect(result).to.have.length(5);
       expect(result.join(' ')).to.eql('Adam Alex Matt Paul Rebecca');
       done();
